@@ -27,7 +27,7 @@ B=[0
    B1(1,1)
    B1(2,1)];
 eig(A);
-rank([B A*B A^2*B A^3*B]);
+rank([B A*B A^2*B A^3*B])
 K=place(A,B,P)
 K1=K(1,1);
 K2=-K(1,2);
