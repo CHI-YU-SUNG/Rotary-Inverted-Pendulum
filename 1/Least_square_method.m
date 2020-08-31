@@ -14,8 +14,8 @@ load('ID.mat');
  for i=1:15358
      a(i,2)=5;
  end
- a=a(1:5000,:);
- y=alpha_prime2(1:5000)';
+ a=a(1:3000,:);
+ y=alpha_prime2(1:3000)';
  x=inv(a'*a)*a'*y%alpha and beta
 
 

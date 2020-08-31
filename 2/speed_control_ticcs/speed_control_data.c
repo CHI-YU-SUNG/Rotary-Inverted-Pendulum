@@ -3,10 +3,10 @@
  *
  * Code generated for Simulink model 'speed_control'.
  *
- * Model version                  : 1.352
+ * Model version                  : 1.353
  * Simulink Coder version         : 8.4 (R2013a) 13-Feb-2013
  * TLC version                    : 8.4 (Jan 19 2013)
- * C/C++ source code generated on : Thu Aug 13 22:44:35 2020
+ * C/C++ source code generated on : Mon Aug 31 15:34:46 2020
  *
  * Target selection: idelink_ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -31,7 +31,7 @@ Parameters_speed_control speed_control_P = {
   2.3561944901923448,                  /* Expression: 0.75*pi
                                         * Referenced by: '<Root>/Constant1'
                                         */
-  -3.0,                                /* Expression: -3
+  -94.0,                               /* Expression: -94
                                         * Referenced by: '<Root>/kp'
                                         */
   0.001,                               /* Computed Parameter: DiscreteTimeIntegrator_gainval
@@ -40,7 +40,7 @@ Parameters_speed_control speed_control_P = {
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<Root>/Discrete-Time Integrator'
                                         */
-  -15.0,                               /* Expression: -15
+  -516.6,                              /* Expression: -516.6
                                         * Referenced by: '<Root>/ki'
                                         */
   12.0,                                /* Expression: 12

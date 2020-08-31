@@ -3,10 +3,10 @@
  *
  * Code generated for Simulink model 'position_control'.
  *
- * Model version                  : 1.350
+ * Model version                  : 1.351
  * Simulink Coder version         : 8.4 (R2013a) 13-Feb-2013
  * TLC version                    : 8.4 (Jan 19 2013)
- * C/C++ source code generated on : Thu Aug 13 22:56:28 2020
+ * C/C++ source code generated on : Mon Aug 31 15:30:17 2020
  *
  * Target selection: idelink_ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000

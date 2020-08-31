@@ -3,10 +3,10 @@
  *
  * Code generated for Simulink model 'position_control'.
  *
- * Model version                  : 1.350
+ * Model version                  : 1.351
  * Simulink Coder version         : 8.4 (R2013a) 13-Feb-2013
  * TLC version                    : 8.4 (Jan 19 2013)
- * C/C++ source code generated on : Thu Aug 13 22:56:28 2020
+ * C/C++ source code generated on : Mon Aug 31 15:30:17 2020
  *
  * Target selection: idelink_ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -37,7 +37,7 @@ Parameters_position_control position_control_P = {
   0.0031415926535897933,               /* Expression: pi*0.001
                                         * Referenced by: '<Root>/Gain2'
                                         */
-  -15.0,                               /* Expression: -15
+  -516.6,                              /* Expression: -516.6
                                         * Referenced by: '<Root>/kp1'
                                         */
   0.0,                                 /* Expression: 0
@@ -46,7 +46,7 @@ Parameters_position_control position_control_P = {
   3.1415926535897931,                  /* Expression: pi
                                         * Referenced by: '<Root>/Gain1'
                                         */
-  -3.0,                                /* Expression: -3
+  -94.0,                               /* Expression: -94
                                         * Referenced by: '<Root>/kd'
                                         */
   12.0,                                /* Expression: 12

@@ -3,10 +3,10 @@
  *
  * Code generated for Simulink model 'position_control'.
  *
- * Model version                  : 1.350
+ * Model version                  : 1.351
  * Simulink Coder version         : 8.4 (R2013a) 13-Feb-2013
  * TLC version                    : 8.4 (Jan 19 2013)
- * C/C++ source code generated on : Thu Aug 13 22:56:28 2020
+ * C/C++ source code generated on : Mon Aug 31 15:30:17 2020
  *
  * Target selection: idelink_ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -77,7 +77,7 @@ struct Parameters_position_control_ {
   real_T Gain2_Gain;                   /* Expression: pi*0.001
                                         * Referenced by: '<Root>/Gain2'
                                         */
-  real_T kp1_Gain;                     /* Expression: -15
+  real_T kp1_Gain;                     /* Expression: -516.6
                                         * Referenced by: '<Root>/kp1'
                                         */
   real_T UnitDelay1_InitialCondition;  /* Expression: 0
@@ -86,7 +86,7 @@ struct Parameters_position_control_ {
   real_T Gain1_Gain;                   /* Expression: pi
                                         * Referenced by: '<Root>/Gain1'
                                         */
-  real_T kd_Gain;                      /* Expression: -3
+  real_T kd_Gain;                      /* Expression: -94
                                         * Referenced by: '<Root>/kd'
                                         */
   real_T Saturation1_UpperSat;         /* Expression: 12

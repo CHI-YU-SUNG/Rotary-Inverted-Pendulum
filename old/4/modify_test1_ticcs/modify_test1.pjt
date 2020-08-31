@@ -1,0 +1,67 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\Users\vsscloud\Desktop\test2020 student\chi_yu\4\modify_test1_ticcs\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="CustomMW"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\rtlib\IQmath_fpu32.lib"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_ADC_cal.asm"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_CodeStartBranch.asm"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_CpuTimers.c"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_DefaultIsr.c"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_DMA.c"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_GlobalVariableDefs.c"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_MemCopy.c"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_PieCtrl.c"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_PieVect.c"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_SysCtrl.c"
+Source="..\..\..\..\..\..\..\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\src\DSP2833x_usDelay.asm"
+Source="DSP28xx_SciUtil.c"
+Source="modify_test1.c"
+Source="modify_test1_data.c"
+Source="modify_test1_main.c"
+Source="MW_c28xx_board.c"
+Source="MW_c28xx_csl.c"
+Source="MW_c28xx_pwm.c"
+Source="MW_c28xx_qep.c"
+Source="rt_nonfinite.c"
+Source="rtGetInf.c"
+Source="rtGetNaN.c"
+Source="modify_test1.cmd"
+
+["Compiler" Settings: "CustomMW"]
+Options=-fr"C:\Users\vsscloud\Desktop\test2020 student\chi_yu\4\modify_test1_ticcs\CustomMW" -i"C:\Program Files\MATLAB\R2013a\toolbox\idelink\extensions\ticcs\inc" -i"C:\Users\vsscloud\Desktop\test2020 student\chi_yu\4\modify_test1_ticcs" -i"C:\Users\vsscloud\Desktop\test2020 student\chi_yu\4" -i"C:\Program Files\MATLAB\R2013a\extern\include" -i"C:\Program Files\MATLAB\R2013a\simulink\include" -i"C:\Program Files\MATLAB\R2013a\rtw\c\src" -i"C:\Program Files\MATLAB\R2013a\rtw\c\src\ext_mode\common" -i"C:\Program Files\MATLAB\R2013a\rtw\c\ert" -d"__TICCSC__" -d"RT" -d"USE_RTMODEL" -d"MODEL=modify_test1" -d"NUMST=1" -d"NCSTATES=0" -d"HAVESTDIO=" -d"ONESTEPFCN=1" -d"TERMFCN=1" -d"MAT_FILE=0" -d"MULTI_INSTANCE_CODE=0" -d"INTEGER_CODE=0" -d"MT=0" -d"CLASSIC_INTERFACE=0" -d"TID01EQ=0" -ml -v28 --float_support=fpu32
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["Linker" Settings: "CustomMW"]
+Options=-c -m"modify_test1.map" -o"modify_test1.out" -stack0x200 -x -l"rts2800_fpu32.lib"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\modify_test1.map" -o".\Debug\modify_test1.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\modify_test1.map" -o".\Release\modify_test1.out" -w -x
+
+["modify_test1.cmd" Settings: "CustomMW"]
+LinkOrder=1
+
+["modify_test1.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["modify_test1.cmd" Settings: "Release"]
+LinkOrder=1
+
